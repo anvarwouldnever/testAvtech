@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "griddy",
-    "slug": "griddy",
+    "name": "testAvtech",
+    "slug": "testAvtech",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,10 +18,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anvarwouldnever3.testAvtech"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d0040afa-3c2d-43f4-9161-f50d71610729"
+      }
     }
   }
 }
