@@ -90,7 +90,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row', 
     bottom: 30, 
     right: SCREEN_WIDTH * 0.05089, 
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    backgroundColor: 'white'
   },
   plus: {
     fontSize: 30, 
