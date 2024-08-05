@@ -1,6 +1,6 @@
 import React from 'react';
-import { FlatList } from 'react-native';
 import ToDoItem from './ToDoItem';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 
 const ToDoList = ({ items, onDelete, onDone }) => {
   const renderItem = ({ item }) => (
@@ -8,10 +8,13 @@ const ToDoList = ({ items, onDelete, onDone }) => {
   );
 
   return (
-    <FlatList
+    <Animated.FlatList
+      entering={FadeInDown.duration(400)}
       data={items}
       renderItem={renderItem}
       keyExtractor={item => item.id.toString()}
+      scrollEventThrottle={16}
+      showsVerticalScrollIndicator={false}
     />
   );
 };
